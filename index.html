@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Nerve Solution
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="tab">
+            <div class="tabChild Bullish tabHighlight">Bullish</div>
+            <div class="tabChild Bearish">Bearish</div>
+            <div class="tabChild RangeBound">RangeBound</div>
+            <div class="tabChild Volatile">Volatile</div>
+        </div>
+
+        <div class="strategyDates">
+            <div class="strategyDates_SelectedContainer" onclick="toggleDropdown()">
+                <span id="strategyDates_SelectedDate">24 Apr 2024</span>
+                <span class="dropdownArrow"><img src="downArrow.png" alt=""></span>
+            </div>
+            <div class="strategyDates_AllDatesContainer" id="datesDropdown">
+                <!-- Dates will be dynamically populated here -->
+            </div>
+        </div>
+
+        <div id="strategies1" class="strategies">
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
